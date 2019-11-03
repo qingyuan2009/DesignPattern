@@ -3,23 +3,18 @@ package pattern03.factorymethod;
 public class FactoryMethod {
 
 	public static void main(String[] args) {
-		try
-        {
-            Product a, b;
-            AbstractFactory af = new ConcreteFactory1();     
-            AbstractFactory bf = new ConcreteFactory2(); 
-            a=af.newProduct();            
-            a.show();
-            b=bf.newProduct();            
-            b.show(); 
-        }
-        catch(Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
-
+		try {
+			Product a, b;
+			AbstractFactory af = new ConcreteFactory1();
+			AbstractFactory bf = new ConcreteFactory2();
+			a = af.newProduct();
+			a.show();
+			b = bf.newProduct();
+			b.show();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
-
 }
 
 //抽象产品：提供了产品的接口
