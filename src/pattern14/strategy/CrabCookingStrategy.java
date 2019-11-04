@@ -27,8 +27,7 @@ interface CrabCooking {
 }
 
 //具体策略类：清蒸大闸蟹
-class SteamedCrabs implements CrabCooking {
-	private static final long serialVersionUID = 1L;
+class SteamedCrabs implements CrabCooking {	
 
 	public void CookingMethod() {
 		System.out.println("清蒸大闸蟹");
@@ -36,8 +35,7 @@ class SteamedCrabs implements CrabCooking {
 }
 
 //具体策略类：红烧大闸蟹
-class BraisedCrabs implements CrabCooking {
-	private static final long serialVersionUID = 1L;
+class BraisedCrabs implements CrabCooking {	
 
 	public void CookingMethod() {
 		System.out.println("红烧大闸蟹");
